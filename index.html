@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>さくら運送株式会社｜確かな品質で、想いを届ける</title>
+<meta name="description" content="さくら運送株式会社は、一般貨物・企業間物流・引越し・倉庫保管まで対応する総合物流企業です。">
+<style>
+  :root {
+    --main: #1f4e8c;
+    --accent: #e85a71;
+    --light: #f4f7fb;
+    --text: #2a2f36;
+    --muted: #6b7380;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif; color: var(--text); line-height: 1.8; background: #fff; }
+  a { color: inherit; text-decoration: none; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+  header { position: sticky; top: 0; background: rgba(255,255,255,.95); box-shadow: 0 2px 8px rgba(0,0,0,.06); z-index: 10; }
+  .nav { display: flex; justify-content: space-between; align-items: center; height: 68px; }
+  .logo { font-weight: 800; font-size: 1.3rem; color: var(--main); display: flex; align-items: center; gap: 8px; }
+  .logo span { color: var(--accent); }
+  nav ul { display: flex; gap: 28px; list-style: none; font-size: .95rem; }
+  nav a:hover { color: var(--accent); }
+  .btn { display: inline-block; background: var(--accent); color: #fff; padding: 12px 28px; border-radius: 999px; font-weight: 700; transition: opacity .2s; }
+  .btn:hover { opacity: .85; }
+  .btn-outline { background: transparent; border: 2px solid #fff; }
+
+  .hero { background: linear-gradient(135deg, rgba(31,78,140,.92), rgba(20,45,85,.92)), repeating-linear-gradient(45deg, #2a5a9a 0 20px, #24508c 20px 40px); color: #fff; padding: 120px 0 100px; text-align: center; }
+  .hero h1 { font-size: clamp(1.8rem, 4.5vw, 3rem); line-height: 1.4; margin-bottom: 20px; }
+  .hero p { font-size: 1.1rem; opacity: .9; margin-bottom: 36px; }
+  .hero .actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+  section { padding: 90px 0; }
+  .section-title { text-align: center; margin-bottom: 50px; }
+  .section-title small { color: var(--accent); font-weight: 700; letter-spacing: .2em; }
+  .section-title h2 { font-size: 2rem; color: var(--main); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+  .card { background: #fff; border-radius: 12px; padding: 32px 24px; box-shadow: 0 4px 20px rgba(0,0,0,.06); text-align: center; transition: transform .2s; }
+  .card:hover { transform: translateY(-4px); }
+  .card .icon { font-size: 2.6rem; margin-bottom: 12px; }
+  .card h3 { color: var(--main); margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: .92rem; }
+
+  .bg-light { background: var(--light); }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; text-align: center; }
+  .stat strong { display: block; font-size: 2.6rem; color: var(--main); }
+  .stat span { color: var(--muted); }
+
+  .about { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+  .about-img { background: linear-gradient(135deg, var(--main), #3d7cc9); border-radius: 16px; height: 320px; display: flex; align-items: center; justify-content: center; font-size: 7rem; }
+  .about h3 { font-size: 1.5rem; color: var(--main); margin-bottom: 16px; }
+  .about p { margin-bottom: 14px; }
+
+  table.company { width: 100%; max-width: 760px; margin: 0 auto; border-collapse: collapse; background: #fff; }
+  table.company th, table.company td { padding: 16px 20px; border-bottom: 1px solid #e3e8ef; text-align: left; vertical-align: top; }
+  table.company th { width: 30%; background: #eaf0f8; color: var(--main); }
+
+  .news li { list-style: none; display: flex; gap: 20px; padding: 16px 0; border-bottom: 1px dashed #d5dbe4; }
+  .news time { color: var(--accent); font-weight: 700; white-space: nowrap; }
+
+  .contact { background: var(--main); color: #fff; text-align: center; }
+  .contact h2 { font-size: 2rem; margin-bottom: 12px; }
+  .contact .tel { font-size: 2.2rem; font-weight: 800; margin: 20px 0 6px; }
+
+  footer { background: #142d55; color: #b9c6da; text-align: center; padding: 28px 0; font-size: .85rem; }
+
+  @media (max-width: 768px) {
+    nav ul { display: none; }
+    .about { grid-template-columns: 1fr; }
+    .about-img { height: 220px; }
+    .news li { flex-direction: column; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo">🚚 さくら<span>運送</span></a>
+    <nav>
+      <ul>
+        <li><a href="#services">事業内容</a></li>
+        <li><a href="#about">私たちについて</a></li>
+        <li><a href="#company">会社概要</a></li>
+        <li><a href="#news">お知らせ</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>確かな品質で、<br>あなたの想いを届ける。</h1>
+    <p>創業1978年。地域密着から全国配送まで、安全・確実な物流をお約束します。</p>
+    <div class="actions">
+      <a href="#contact" class="btn">無料お見積もり</a>
+      <a href="#services" class="btn btn-outline">サービスを見る</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <small>SERVICES</small>
+      <h2>事業内容</h2>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon">📦</div><h3>一般貨物輸送</h3><p>小口から大口まで、2t〜10t車を揃え、ご要望に合わせた最適な輸送をご提案します。</p></div>
+      <div class="card"><div class="icon">🏭</div><h3>企業間物流</h3><p>定期便・ルート配送で工場や店舗間の物流を効率化。コスト削減にも貢献します。</p></div>
+      <div class="card"><div class="icon">🏠</div><h3>引越しサービス</h3><p>単身から法人オフィス移転まで。経験豊富なスタッフが丁寧に作業します。</p></div>
+      <div class="card"><div class="icon">🏬</div><h3>倉庫・保管</h3><p>延床5,000㎡の自社倉庫で、在庫管理から流通加工までワンストップで対応。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light">
+  <div class="container stats">
+    <div class="stat"><strong>45<small>年</small></strong><span>創業からの歩み</span></div>
+    <div class="stat"><strong>120<small>台</small></strong><span>保有車両数</span></div>
+    <div class="stat"><strong>99.8<small>%</small></strong><span>定時配達率</span></div>
+    <div class="stat"><strong>1,500<small>社</small></strong><span>お取引企業数</span></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <div class="about-img">🚛</div>
+    <div>
+      <div class="section-title" style="text-align:left;margin-bottom:20px">
+        <small>ABOUT US</small>
+        <h2>私たちについて</h2>
+      </div>
+      <h3>「安全第一」が、私たちの原点です。</h3>
+      <p>さくら運送は、地元の小さな運送会社としてスタートしました。以来、お客様の大切な荷物を「自分の荷物」と考え、一つひとつ丁寧にお届けしてきました。</p>
+      <p>全車両にドライブレコーダーとデジタコを完備し、定期的な安全講習を実施。Gマーク（安全性優良事業所）認定も取得しています。</p>
+    </div>
+  </div>
+</section>
+
+<section id="company" class="bg-light">
+  <div class="container">
+    <div class="section-title">
+      <small>COMPANY</small>
+      <h2>会社概要</h2>
+    </div>
+    <table class="company">
+      <tr><th>会社名</th><td>さくら運送株式会社</td></tr>
+      <tr><th>設立</th><td>1978年4月</td></tr>
+      <tr><th>代表者</th><td>代表取締役 桜井 誠</td></tr>
+      <tr><th>資本金</th><td>3,000万円</td></tr>
+      <tr><th>従業員数</th><td>180名（2026年4月現在）</td></tr>
+      <tr><th>本社所在地</th><td>〒000-0000 架空県さくら市運送町1-2-3</td></tr>
+      <tr><th>営業所</th><td>本社営業所／東営業所／西物流センター</td></tr>
+      <tr><th>許認可</th><td>一般貨物自動車運送事業（架運第0000号）<br>倉庫業登録（架空第000号）</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="news">
+  <div class="container">
+    <div class="section-title">
+      <small>NEWS</small>
+      <h2>お知らせ</h2>
+    </div>
+    <ul class="news">
+      <li><time>2026.10.01</time><span>年末年始の営業日についてのお知らせ</span></li>
+      <li><time>2026.08.15</time><span>西物流センターに冷蔵・冷凍倉庫を新設しました</span></li>
+      <li><time>2026.06.01</time><span>電気トラック5台を導入しました（環境への取り組み）</span></li>
+      <li><time>2026.04.01</time><span>新卒ドライバー12名が入社しました</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>お見積もり・お問い合わせ</h2>
+    <p>輸送・引越し・保管のご相談は、お気軽にご連絡ください。</p>
+    <div class="tel">📞 0120-000-000</div>
+    <p>受付時間：平日 8:00〜18:00 ／ 土曜 9:00〜15:00</p>
+    <p style="margin-top:24px"><a href="mailto:info@example.com" class="btn">メールで問い合わせる</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 さくら運送株式会社（架空の会社です）</p>
+</footer>
+
+</body>
+</html>
